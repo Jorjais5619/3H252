@@ -1,1 +1,3 @@
-# 3H252
+
+sudo apt update
+sudo apt install graphviz
