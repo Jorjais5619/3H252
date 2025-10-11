@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 using namespace std;
 class Empleado{
     private:
@@ -34,6 +35,22 @@ Empleado empleados[10];//2 730 B
   int a=64;
   char b=(char)a;
   cout<<b<<endl;
+
+
+  int* dirA=(int*)malloc(sizeof(int));        //PUNTERO EN C
+  *dirA = 24;
+  //free(dirA);                                 //DESRCTOR EN C
+
+  int* dirB=new int(24);                      //PUNTERO EN C++
+  //delete dirB;                                //DESTRUCTOR C++
+
+  //VALORES EN C
+  cout<<*dirA<<endl;
+  cout<<dirA<<endl;
+
+  //VALORE EN C++
+  cout<<dirB<<endl;
+  cout<<*dirB<<endl;
 
   return 0;
 }
