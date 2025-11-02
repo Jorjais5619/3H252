@@ -1,5 +1,5 @@
-run : bin/animacion
-	./bin/animacion
+run : bin/acuario
+	./bin/acuario
 
-bin/animacion : src/animacion.cpp
-	c++ -Iinclude src/animacion.cpp -o bin/animacion -lftxui-screen
+bin/acuario : src/acuario.cpp
+	c++ -Iinclude src/acuario.cpp -o bin/acuario -lftxui-screen
